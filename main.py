@@ -2,6 +2,8 @@ import sys
 import os
 from abc import ABC
 
+class CutstomExc(Exception): ...
+
 class Warrior(ABC):
     def __init__(self):
         self.type = 'ancient'
@@ -21,7 +23,8 @@ class Viking(Warrior):
     def kill(self):
         raise AttributeError()
 
+def main():
+    raise CutstomExc()
 
-new_warrior = Viking()
-new_warrior.roar()
-new_warrior.kill()
+if __name__ == '__main__': main()
+

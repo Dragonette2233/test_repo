@@ -1,0 +1,18 @@
+body {
+    background-color: grey;
+}
+
+.header {
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: yellow;
+    margin: 5%;
+}
+
+.container {
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: yellow;
+}
